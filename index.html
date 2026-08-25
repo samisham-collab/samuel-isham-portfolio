@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samuel Isham — IT Assistant &amp; Developer</title>
+<meta name="description" content="Portfolio of Samuel Isham — IT Assistant at USD 352, Informatics in Networking and Telecommunications student at Fort Hays State University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="net-bg"></canvas>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-prompt">guest@samuel-isham</span><span class="brand-colon">:~$</span>
+      <span class="brand-cursor">_</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">about</a>
+      <a href="#experience" class="nav-link">experience</a>
+      <a href="#skills" class="nav-link">skills</a>
+      <a href="#projects" class="nav-link">projects</a>
+      <a href="#terminal" class="nav-link">terminal</a>
+      <a href="#contact" class="nav-link">contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-spotlight" id="spotlight"></div>
+    <div class="hero-inner">
+      <p class="hero-eyebrow">// welcome to my portfolio</p>
+      <h1 class="hero-title">
+        Hi, I'm <span class="accent">Samuel Isham</span>
+      </h1>
+      <div class="hero-typed-wrap">
+        <span class="hero-typed-prefix">&gt;</span>
+        <span id="typed" class="hero-typed"></span><span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-sub">
+        IT Assistant at <strong>USD 352</strong> &middot; Junior, Informatics in Networking and Telecommunications at <strong>Fort Hays State University</strong> &middot; Goodland, Kansas
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">District-wide<br>network upgrade led</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">freeCodeCamp<br>certifications earned</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1000+</span>
+          <span class="stat-label">devices<br>supported daily</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section-kicker">01 &mdash; about</p>
+    <h2 class="section-title">A little about me</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm an IT Assistant for <strong>USD 352</strong>, where I keep the district's technology
+          running &mdash; from day-to-day helpdesk support to planning and deploying larger
+          infrastructure projects. Most recently, I led a <strong>complete network upgrade across
+          the entire district</strong>, working through switch configuration and deployment
+          building by building.
+        </p>
+        <p>
+          Alongside that, I'm a full-time Informatics in Networking and Telecommunications
+          student at <strong>Fort Hays State University</strong>, building out my software and database skills to go with my
+          networking background. I'm equally comfortable behind a switch's CLI as I am behind
+          a terminal writing code.
+        </p>
+        <p>
+          What I bring to the table isn't just technical &mdash; patience and clear communication
+          matter just as much when you're helping someone through a support ticket as
+          configuring a switch stack.
+        </p>
+        <div class="badge-row">
+          <span class="badge">freeCodeCamp &mdash; Legacy Responsive Web Design</span>
+          <span class="badge">freeCodeCamp &mdash; Legacy Relational Databases V8</span>
+        </div>
+      </div>
+
+      <div class="about-card reveal">
+        <div class="terminal-chrome">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="chrome-title">whoami.sh</span>
+        </div>
+        <pre class="terminal-code"><code><span class="c-comment"># samuel isham</span>
+<span class="c-key">role</span>:      <span class="c-str">IT Assistant @ USD 352</span>
+<span class="c-key">studying</span>:  <span class="c-str">B.S. Informatics in Networking &amp; Telecom, FHSU (Junior)</span>
+<span class="c-key">based_in</span>:  <span class="c-str">Goodland, Kansas</span>
+<span class="c-key">focus</span>:     <span class="c-str">networking + full-stack dev</span>
+<span class="c-key">status</span>:    <span class="c-ok">available for opportunities</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <p class="section-kicker">02 &mdash; experience</p>
+    <h2 class="section-title">Where I've worked</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>IT Assistant</h3>
+            <span class="timeline-org">USD 352</span>
+          </div>
+          <span class="timeline-date">Goodland, Kansas</span>
+          <ul class="timeline-list">
+            <li>Planned and executed a <strong>district-wide network upgrade</strong>, configuring and deploying switching infrastructure across every building.</li>
+            <li>Run daily helpdesk support, troubleshooting hardware, software, and network issues for staff and students.</li>
+            <li>Assist with rolling out and deploying new technology projects district-wide.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>B.S. Informatics in Networking and Telecommunications</h3>
+            <span class="timeline-org">Fort Hays State University</span>
+          </div>
+          <span class="timeline-date">Junior &middot; In progress</span>
+          <ul class="timeline-list">
+            <li>Full-time student building on a networking background with software development and database coursework.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Legacy Relational Databases V8</h3>
+            <span class="timeline-org">freeCodeCamp Certification</span>
+          </div>
+          <span class="timeline-date">2026</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Legacy Responsive Web Design</h3>
+            <span class="timeline-org">freeCodeCamp Certification</span>
+          </div>
+          <span class="timeline-date">2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="section-kicker">03 &mdash; skills</p>
+    <h2 class="section-title">What I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="10" rx="1"/><path d="M6 11h.01M10 11h.01M14 11h.01M18 11h.01"/></svg>
+        </div>
+        <h3>Networking &amp; Switching</h3>
+        <div class="tag-row">
+          <span class="tag">Cisco CLI</span>
+          <span class="tag">Switch Configuration</span>
+          <span class="tag">Network Deployment</span>
+          <span class="tag">Troubleshooting</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <h3>Development</h3>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">PostgreSQL (CLI)</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Soft Skills</h3>
+        <div class="tag-row">
+          <span class="tag">Patience</span>
+          <span class="tag">Understanding</span>
+          <span class="tag">Clear Communication</span>
+          <span class="tag">Helpdesk Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="section-kicker">04 &mdash; projects</p>
+    <h2 class="section-title">Featured work</h2>
+
+    <div class="projects-grid">
+      <div class="project-card featured reveal">
+        <div class="project-glow"></div>
+        <span class="project-tag">Infrastructure</span>
+        <h3>USD 352 Network Upgrade</h3>
+        <p>Led a complete network infrastructure upgrade across the entire school district &mdash; planning, configuring, and deploying switching hardware building by building to modernize connectivity for staff and students.</p>
+        <div class="tag-row">
+          <span class="tag">Cisco CLI</span>
+          <span class="tag">Switching</span>
+          <span class="tag">District-wide rollout</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-tag">Certification</span>
+        <h3>Legacy Responsive Web Design</h3>
+        <p>freeCodeCamp certification covering HTML &amp; CSS fundamentals, flexbox, grid, and responsive layout techniques.</p>
+        <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-tag">Certification</span>
+        <h3>Legacy Relational Databases V8</h3>
+        <p>freeCodeCamp certification covering relational database design and SQL fundamentals from the Linux terminal.</p>
+        <div class="tag-row"><span class="tag">SQL</span><span class="tag">PostgreSQL</span></div>
+      </div>
+
+      <div class="project-card placeholder reveal">
+        <div class="placeholder-icon">+</div>
+        <h3>More coming soon</h3>
+        <p>I'm actively building out more projects to showcase here &mdash; check back soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERMINAL -->
+  <section class="section" id="terminal">
+    <p class="section-kicker">05 &mdash; terminal</p>
+    <h2 class="section-title">Try it yourself</h2>
+    <p class="section-desc">Type <code>help</code> to see what this terminal can do.</p>
+
+    <div class="terminal-window" id="terminalWindow">
+      <div class="terminal-chrome">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="chrome-title">guest@samuel-isham: ~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody" tabindex="0">
+        <div class="terminal-line">Welcome! Type <span class="c-ok">help</span> to get started.</div>
+        <div class="terminal-input-line">
+          <span class="terminal-prompt">guest@samuel-isham:~$</span>
+          <input type="text" id="terminalInput" class="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal input">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <p class="section-kicker">06 &mdash; contact</p>
+    <h2 class="section-title">Let's connect</h2>
+    <p class="section-desc">Whether it's an opportunity, a project, or just to talk tech &mdash; reach out.</p>
+
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="tel:7858213124">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">785-821-3124</span>
+      </a>
+
+      <a class="contact-card reveal" href="mailto:sbisham@mail.fhsu.edu">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </div>
+        <span class="contact-label">Email</span>
+        <span class="contact-value">sbisham@mail.fhsu.edu</span>
+      </a>
+
+      <a class="contact-card reveal" href="https://www.linkedin.com/in/samuel-isham-b674b7264/" target="_blank" rel="noopener noreferrer">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">samuel-isham</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Samuel Isham &middot; <span id="year"></span></p>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
