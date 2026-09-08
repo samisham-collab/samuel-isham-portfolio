@@ -151,8 +151,9 @@
     help: () =>
       'Available commands:\n' +
       '  about       show a short bio\n' +
-      '  skills      list technical skills\n' +
       '  experience  show work experience\n' +
+      '  education   show education and certifications\n' +
+      '  skills      list technical skills\n' +
       '  projects    show featured projects\n' +
       '  contact     show contact info\n' +
       '  whoami      guess who\n' +
@@ -169,11 +170,19 @@
       'Development: Python, HTML/CSS, PostgreSQL (CLI)\n' +
       'Soft skills: Patience, Understanding, Clear Communication',
     experience: () =>
-      'IT Assistant — USD 352\n' +
-      '  Led a district-wide network upgrade (switching infrastructure).\n' +
-      '  Daily helpdesk support and technology deployment.\n\n' +
+      'IT Assistant — USD 352 (Aug 2025 – Present)\n' +
+      '  Help desk, VOIP/intercom/access control/security systems, iOS\n' +
+      '  device management, and a district-wide network upgrade.\n\n' +
+      'Summer Camp Counselor — Camp Christy (Jun 2023 – Present)\n' +
+      '  Concurrent with the roles above — maintenance and housekeeping.\n\n' +
+      'Water Laborer — City of Goodland (Sep 2024 – Jul 2025)\n\n' +
+      'Associate — Ace Hardware Corporation (Aug 2021 – May 2023)\n\n' +
+      'Type \'education\' for school and certifications.',
+    education: () =>
       'B.S. Informatics in Networking and Telecommunications — Fort Hays\n' +
-      'State University (Junior)',
+      'State University (Junior, in progress)\n\n' +
+      'freeCodeCamp: Legacy Relational Databases V8 (2026)\n' +
+      'freeCodeCamp: Legacy Responsive Web Design (2026)',
     projects: () =>
       'USD 352 Network Upgrade — district-wide switching deployment\n' +
       'freeCodeCamp: Legacy Responsive Web Design\n' +
@@ -182,9 +191,9 @@
     contact: () =>
       'Phone:    785-821-3124\n' +
       'Email:    sbisham@mail.fhsu.edu\n' +
-      'LinkedIn: linkedin.com/in/samuel-isham-b674b7264',
+      'LinkedIn: linkedin.com/in/samuel-isham',
     whoami: () => 'guest (but you already knew that)',
-    ls: () => 'about/  experience/  skills/  projects/  terminal/  contact/',
+    ls: () => 'about/  experience/  education/  skills/  projects/  terminal/  contact/',
     date: () => new Date().toString(),
     sudo: () => 'Nice try. Permission denied: this terminal runs as guest.',
     clear: () => '__CLEAR__'
