@@ -176,8 +176,7 @@
       'Summer Camp Counselor — Camp Christy (Jun 2023 – Present)\n' +
       '  Concurrent with the roles above — maintenance and housekeeping.\n\n' +
       'Water Laborer — City of Goodland (Sep 2024 – Jul 2025)\n\n' +
-      'Associate — Ace Hardware Corporation (Aug 2021 – May 2023)\n\n' +
-      'Type \'education\' for school and certifications.',
+      'Associate — Ace Hardware Corporation (Aug 2021 – May 2023)',
     education: () =>
       'B.S. Informatics in Networking and Telecommunications — Fort Hays\n' +
       'State University (Junior, in progress)\n\n' +
