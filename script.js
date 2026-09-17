@@ -276,8 +276,12 @@ function setupTerminal(theme) {
       'Information Networking and Telecommunications student at Fort',
       'Hays State University.',
       '',
-      'Help desk, networks, and device management by day. Databases',
-      'and web projects the rest of the time.'
+      'Switches and routers on UniFi at work. CCNA material and Cisco',
+      'switching on my own time. As comfortable in a switch CLI as I am',
+      'writing a script in Python.',
+      '',
+      'Goal: make USD 352 a place that uses technology more efficiently,',
+      'to enrich our students in a more meaningful way.'
     ].join('\n'),
 
     experience: () => experienceGraph,
