@@ -313,7 +313,6 @@ function setupTerminal(theme) {
 
     contact: () => [
       'email      sbisham@mail.fhsu.edu',
-      'phone      785-821-3124',
       'linkedin   linkedin.com/in/samuel-isham',
       'github     github.com/samisham-collab'
     ].join('\n'),
